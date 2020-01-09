@@ -49,6 +49,7 @@ typedef struct {
 } PID_POLLING_INFO;
 
 PID_POLLING_INFO obdData[]= { // Defines which PIDs would be READ
+  {PID_FUEL_LEVEL, 1},
   {PID_SPEED, 1},
   {PID_RPM, 1},
   {PID_INTAKE_TEMP, 1},
@@ -66,6 +67,7 @@ typedef struct {
 } PID_LIST;
 
 PID_LIST PIDLog[] = { // Defines which PIDs would be LOGGED and their labels on the CSV
+    {PID_FUEL_LEVEL, true, "Fuel Level"},
     {PID_SPEED, true, "Speed"},
     {PID_RPM, true, "RPM"},
     {PID_INTAKE_TEMP, true, "Intake Temp"},
